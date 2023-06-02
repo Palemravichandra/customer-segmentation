@@ -401,8 +401,8 @@ with col3:
 submit=st.button('SUBMIT')
 if submit:
     prediction=model.predict([[age,education_qual,day,dur,num_calls,job_admin,job_blue_collar,job_entrepreneur,job_housemaid,job_management,job_retired,job_self_employed,job_services,job_student,job_technician,job_unemployed,marital_divorced,marital_married,marital_single,mon_apr,mon_aug,mon_dec,mon_feb,mon_jan,mon_jul,mon_jun,mon_mar,mon_may,mon_nov,mon_oct,mon_sep,call_type_cellular,call_type_telephone,call_type_unknown,prev_outcome_failure,prev_outcome_other,prev_outcome_success,prev_outcome_unknown ]])
-    if prediction[0]==1:
-        st.write('## :green[Subscribe The Insurance]')
-    else:
+    if prediction[0]==0:
         st.write('## :red[Not Subscribed The Insurance]')
+    else:
+        st.write('## :green[Subscribe The Insurance]')
 st.write( ':blue[App Created by RAVI CHANDRA PALEM]' )
