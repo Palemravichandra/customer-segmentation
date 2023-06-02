@@ -408,4 +408,4 @@ if submit:
         st.write('##:green[Subscribe The Insurance]')
     else:
         st.write('##:red[Not Subscribed The Insurance]')
-st.write( ':skyblue[App Created by RAVI CHANDRA PALEM]' )
+st.write( ':#87CEEB[App Created by RAVI CHANDRA PALEM]' )
