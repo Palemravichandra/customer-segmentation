@@ -5,7 +5,7 @@ import sklearn
 from xgboost import XGBClassifier
 
 st.title(':blue[CUSTOMER SEGMENTATION APP]')
-file = open('customer_xgb.pkl','rb')
+file = open('customer_segment_xgb.pkl','rb')
 model= pickle.load(file)
 col1,col2,col3=st.columns(3)
 with col1:
